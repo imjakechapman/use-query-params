@@ -50,15 +50,15 @@ function useQueryParams<
 
     if(params && Object.keys(params).length > 0) {
       setQueryParams(
-        encodeQueryParams<P>(queryParams, params)
+        mergeQueryParams<P>(queryParams, params)
       )
     } else if (!params) {
       setQueryParams(
-        encodeQueryParams<any>(defaultParams, {})
+        mergeQueryParams<any>(defaultParams, {})
       )
     } else {
       setQueryParams(
-        encodeQueryParams<any>({}, {})
+        mergeQueryParams<any>({}, {})
       )
     }
   }
@@ -86,13 +86,13 @@ function buildDefaultQueryString<
 }
 
 /**
- * Encode Query Params
+ * Merge Query Params
  * Merges previous query params with updated query params
  * @param currentParams 
  * @param params 
  * @return {Object}
  */
-function encodeQueryParams<
+function mergeQueryParams<
   P = GenericObject
 >(
   currentParams: any,
