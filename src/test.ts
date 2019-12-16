@@ -1,7 +1,10 @@
-import { useMyHook } from './'
+import { useQueryParams } from './'
 
-describe('useMyHook', () => {
+describe('useQueryParams', () => {
   it('is truthy', () => {
-    expect(useMyHook).toBeTruthy()
+    expect(useQueryParams).toBeTruthy()
   })
 })
+
+// TODO
+// Write some damn tests Jake

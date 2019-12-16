@@ -10,6 +10,9 @@
     "react-scripts": "^3.0.1",
     "use-query-params": "link:.."
   },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
