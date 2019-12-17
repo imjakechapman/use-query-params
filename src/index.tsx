@@ -34,10 +34,10 @@ function useQueryParams<
     const { urlUpdateType = "push", onQueryParamsChange = () => {} } = options;
     switch(urlUpdateType) {
       case 'replace':
-        history.replace(`?${stringify(queryParams)}`)
+        history.replace(`${window.location.pathname}?${stringify(queryParams)}`)
         break;
       case 'push':
-        history.push(`?${stringify(queryParams)}`)
+        history.push(`${window.location.pathname}?${stringify(queryParams)}`)
         break;
       default:
         break;
