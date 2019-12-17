@@ -6,9 +6,6 @@
   "license": "MIT",
   "repository": "imjakechapman/use-query-params",
   "bugs": "https://github.com/imjakechapman/use-query-params/issues",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
